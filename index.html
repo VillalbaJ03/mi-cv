@@ -2,1132 +2,1364 @@
 <html lang="es">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jenner Villalba | CV</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-  
-  <meta name="description" content="CV Profesional de Jenner Joan Villalba Paladines - Ingeniero en Tecnologías de la Información" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jenner Villalba — Desarrollador de Software · Chatbots &amp; IA</title>
+
+  <meta name="description" content="Desarrollador de software en Machala, Ecuador. Especializado en chatbots de WhatsApp, automatización con IA y desarrollo web con Python, Node.js y React." />
   <meta name="author" content="Jenner Joan Villalba Paladines" />
-  <meta name="keywords" content="CV, Ingeniero TI, Desarrollo Web, Soporte Técnico, Machala, Ecuador" />
-  
-  <!-- Open Graph para compartir en redes -->
-  <meta property="og:title" content="Jenner Joan Villalba Paladines | CV Profesional" />
-  <meta property="og:description" content="Futuro Ingeniero en TI con experiencia en desarrollo web y administración de servidores" />
-  <meta property="og:type" content="website" />
+
+  <meta property="og:title" content="Jenner Villalba — Desarrollador de Software" />
+  <meta property="og:description" content="Chatbots, automatización con IA y desarrollo web. Python · Node.js · React. Machala, Ecuador." />
+  <meta property="og:type" content="profile" />
+
+  <meta name="theme-color" content="#faf9f7" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f3ac2'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='30' font-weight='700' fill='%23fff' text-anchor='middle'%3EJV%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script>
+    // Aplica el tema antes del primer render para evitar parpadeo (FOUC)
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t !== 'light' && t !== 'dark') {
+        t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      if (location.hash === '#claro') { t = 'light'; }
+      if (location.hash === '#oscuro') { t = 'dark'; }
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jenner Joan Villalba Paladines",
+    "jobTitle": "Desarrollador de Software",
+    "email": "mailto:jennerjoanvillalba@gmail.com",
+    "telephone": "+593994866214",
+    "address": { "@type": "PostalAddress", "addressLocality": "Machala", "addressRegion": "El Oro", "addressCountry": "EC" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidad Técnica de Machala" },
+    "knowsAbout": ["Chatbots", "Automatización", "Inteligencia Artificial", "Python", "Node.js", "React", "PostgreSQL", "Linux"],
+    "sameAs": [
+      "https://github.com/VillalbaJ03",
+      "https://www.linkedin.com/in/jenner-villalba-aa76143b8/"
+    ]
+  }
+  </script>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-    
-    :root{
-      --primary:#2563eb;
-      --primary-dark:#1d4ed8;
-      --primary-light:#3b82f6;
-      --bg:#0f172a;
-      --panel:#1e293b;
-      --panel-light:#334155;
-      --text:#1e293b;
-      --text-light:#64748b;
-      --white:#ffffff;
-      --line:#e2e8f0;
-      --success:#10b981;
-      --warning:#f59e0b;
-      --gradient:linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-      --shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1);
-      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1);
-      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1), 0 8px 10px -6px rgba(0,0,0,.1);
-      --radius: 16px;
-      --radius-sm: 10px;
-    }
-    
-    *{box-sizing:border-box; margin:0; padding:0}
-    
-    html{scroll-behavior:smooth}
-    
-    body{
-      font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
-      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-      color:var(--text);
-      line-height:1.6;
-      min-height:100vh;
-    }
-    
-    a{color:inherit; text-decoration:none; transition: color .2s}
-    a:hover{color:var(--primary)}
-    
-    /* Container */
-    .container{
-      max-width:1140px;
-      margin:0 auto;
-      padding:24px 20px;
-    }
-    
-    /* Header Hero */
-    .hero{
-      background: var(--gradient);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow-xl);
-      overflow:hidden;
-      position:relative;
-    }
-    .hero::before{
-      content:'';
-      position:absolute;
-      top:0; right:0;
-      width:300px; height:300px;
-      background: radial-gradient(circle, rgba(37,99,235,.15) 0%, transparent 70%);
-      pointer-events:none;
-    }
-    
-    .hero-content{
-      display:grid;
-      grid-template-columns: auto 1fr;
-      gap:32px;
-      padding:32px;
-      align-items:center;
-      position:relative;
-      z-index:1;
-    }
-    
-    .avatar-container{
-      position:relative;
-    }
-    .avatar-ring{
-      width:180px; height:180px;
-      border-radius:50%;
-      padding:5px;
-      background: linear-gradient(135deg, var(--primary) 0%, #06b6d4 100%);
-      box-shadow: 0 0 30px rgba(37,99,235,.3);
-    }
-    .avatar{
-      width:100%; height:100%;
-      border-radius:50%;
-      object-fit:cover;
-      border:4px solid var(--panel);
-      display:block;
-    }
-    .status-badge{
-      position:absolute;
-      bottom:10px; right:10px;
-      background:var(--success);
-      color:var(--white);
-      font-size:11px;
-      font-weight:600;
-      padding:4px 10px;
-      border-radius:20px;
-      border:3px solid var(--panel);
-      animation: pulse 2s infinite;
-    }
-    @keyframes pulse{
-      0%, 100%{box-shadow: 0 0 0 0 rgba(16,185,129,.4)}
-      50%{box-shadow: 0 0 0 8px rgba(16,185,129,0)}
-    }
-    
-    .hero-info{
-      color:var(--white);
-    }
-    .hero-info h1{
-      font-size:32px;
-      font-weight:800;
-      letter-spacing:-.5px;
-      margin-bottom:8px;
-      background: linear-gradient(90deg, #fff 0%, #cbd5e1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .hero-role{
-      font-size:14px;
-      font-weight:600;
-      letter-spacing:3px;
-      text-transform:uppercase;
-      color:var(--primary-light);
-      margin-bottom:16px;
-    }
-    
-    .hero-tags{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-      margin-bottom:20px;
-    }
-    .tag{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      background:rgba(255,255,255,.1);
-      backdrop-filter:blur(10px);
-      border:1px solid rgba(255,255,255,.15);
-      color:var(--white);
-      padding:8px 14px;
-      border-radius:25px;
-      font-size:13px;
-      font-weight:500;
-      transition: all .2s;
-    }
-    .tag:hover{
-      background:rgba(255,255,255,.15);
-      transform:translateY(-2px);
-    }
-    
-    .hero-contact{
-      display:flex;
-      flex-wrap:wrap;
-      gap:16px;
-    }
-    .contact-link{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      color:rgba(255,255,255,.9);
-      font-size:13px;
-      transition: all .2s;
-    }
-    .contact-link:hover{
-      color:var(--primary-light);
-      transform:translateX(3px);
-    }
-    .contact-icon{
-      width:32px; height:32px;
-      border-radius:8px;
-      background:rgba(255,255,255,.1);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:14px;
-    }
-    
-    /* Quick Actions */
-    .quick-actions{
-      display:flex;
-      gap:12px;
-      padding:20px 32px;
-      background:rgba(0,0,0,.2);
-      border-top:1px solid rgba(255,255,255,.1);
-    }
-    .action-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:10px 18px;
-      border-radius:25px;
-      font-size:13px;
-      font-weight:600;
-      cursor:pointer;
-      transition: all .2s;
-      border:none;
-    }
-    .action-btn.primary{
-      background:var(--primary);
-      color:var(--white);
-    }
-    .action-btn.primary:hover{
-      background:var(--primary-dark);
-      transform:translateY(-2px);
-      box-shadow: 0 4px 12px rgba(37,99,235,.4);
-    }
-    .action-btn.secondary{
-      background:rgba(255,255,255,.1);
-      color:var(--white);
-      border:1px solid rgba(255,255,255,.2);
-    }
-    .action-btn.secondary:hover{
-      background:rgba(255,255,255,.15);
-    }
-    
-    /* Layout */
-    .layout{
-      display:grid;
-      grid-template-columns: 340px 1fr;
-      gap:24px;
-      margin-top:24px;
-    }
-    
-    /* Sidebar */
-    .sidebar{
-      display:flex;
-      flex-direction:column;
-      gap:20px;
-    }
-    
-    .side-card{
-      background:var(--white);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:24px;
-      transition: transform .2s, box-shadow .2s;
-    }
-    .side-card:hover{
-      transform:translateY(-3px);
-      box-shadow:var(--shadow-lg);
-    }
-    
-    .side-title{
-      font-size:13px;
-      font-weight:700;
-      text-transform:uppercase;
-      letter-spacing:1.5px;
-      color:var(--text-light);
-      margin-bottom:16px;
-      display:flex;
-      align-items:center;
-      gap:8px;
-    }
-    .side-title::before{
-      content:'';
-      width:4px; height:16px;
-      background:var(--primary);
-      border-radius:2px;
-    }
-    
-    /* Education */
-    .edu-item{
-      padding:14px 0;
-      border-bottom:1px solid var(--line);
-    }
-    .edu-item:last-child{border-bottom:none}
-    .edu-item:first-child{padding-top:0}
-    .edu-degree{
-      font-weight:700;
-      font-size:14px;
-      color:var(--text);
-      margin-bottom:4px;
-    }
-    .edu-school{
-      font-size:13px;
-      color:var(--text-light);
-      margin-bottom:4px;
-    }
-    .edu-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:4px;
-      font-size:11px;
-      font-weight:600;
-      padding:4px 10px;
-      border-radius:15px;
-      margin-top:6px;
-    }
-    .edu-badge.current{
-      background:rgba(37,99,235,.1);
-      color:var(--primary);
-    }
-    .edu-badge.completed{
-      background:rgba(16,185,129,.1);
-      color:var(--success);
-    }
-    
-    /* Certifications */
-    .cert-item{
-      display:flex;
-      align-items:flex-start;
-      gap:12px;
-      padding:10px 0;
-    }
-    .cert-icon{
-      width:36px; height:36px;
-      border-radius:8px;
-      background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:16px;
-      flex-shrink:0;
-    }
-    .cert-info{
-      flex:1;
-    }
-    .cert-name{
-      font-size:13px;
-      font-weight:600;
-      color:var(--text);
-    }
-    .cert-issuer{
-      font-size:11px;
-      color:var(--text-light);
-    }
-    .cert-year{
-      font-size:11px;
-      font-weight:600;
-      color:var(--primary);
-    }
-    
-    /* Skills */
-    .skills-grid{
-      display:grid;
-      gap:8px;
-    }
-    .skill-category{
-      margin-bottom:16px;
-    }
-    .skill-category:last-child{margin-bottom:0}
-    .skill-cat-title{
-      font-size:12px;
-      font-weight:600;
-      color:var(--text-light);
-      margin-bottom:10px;
-      text-transform:uppercase;
-      letter-spacing:.5px;
-    }
-    .skill-tags{
-      display:flex;
-      flex-wrap:wrap;
-      gap:6px;
-    }
-    .skill-tag{
-      font-size:12px;
-      padding:6px 12px;
-      border-radius:20px;
-      font-weight:500;
-      transition: all .2s;
-    }
-    .skill-tag.tech{
-      background:rgba(37,99,235,.1);
-      color:var(--primary);
-    }
-    .skill-tag.soft{
-      background:rgba(16,185,129,.1);
-      color:var(--success);
-    }
-    .skill-tag:hover{
-      transform:scale(1.05);
-    }
-    
-    /* Languages */
-    .lang-item{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:10px 0;
-      border-bottom:1px solid var(--line);
-    }
-    .lang-item:last-child{border-bottom:none}
-    .lang-name{
-      font-weight:600;
-      font-size:14px;
-    }
-    .lang-level{
-      font-size:12px;
-      padding:4px 12px;
-      border-radius:15px;
-      font-weight:600;
-    }
-    .lang-level.native{
-      background:rgba(16,185,129,.1);
-      color:var(--success);
-    }
-    .lang-level.basic{
-      background:rgba(245,158,11,.1);
-      color:var(--warning);
-    }
-    
-    /* Main Content */
-    .main{
-      display:flex;
-      flex-direction:column;
-      gap:24px;
-    }
-    
-    .card{
-      background:var(--white);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:28px;
-      transition: transform .2s, box-shadow .2s;
-    }
-    .card:hover{
-      box-shadow:var(--shadow-lg);
-    }
-    
-    .card-header{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      margin-bottom:20px;
-    }
-    .card-title{
-      font-size:18px;
-      font-weight:800;
-      color:var(--text);
-      display:flex;
-      align-items:center;
-      gap:10px;
-    }
-    .card-title-icon{
-      width:36px; height:36px;
-      border-radius:10px;
-      background:var(--gradient);
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-size:16px;
-    }
-    
-    /* Profile */
-    .profile-text{
-      font-size:15px;
-      color:var(--text);
-      line-height:1.8;
-    }
-    .profile-text strong{
-      color:var(--primary);
-      font-weight:600;
-    }
-    .profile-highlight{
-      margin-top:20px;
-      padding:16px 20px;
-      background: linear-gradient(90deg, rgba(37,99,235,.08) 0%, rgba(6,182,212,.08) 100%);
-      border-left:4px solid var(--primary);
-      border-radius:0 var(--radius-sm) var(--radius-sm) 0;
-    }
-    .profile-highlight p{
-      font-size:14px;
-      color:var(--text);
-      font-weight:500;
-    }
-    
-    /* Experience */
-    .timeline{
-      position:relative;
-    }
-    .timeline::before{
-      content:'';
-      position:absolute;
-      left:18px;
-      top:0; bottom:0;
-      width:2px;
-      background:var(--line);
-    }
-    
-    .exp-item{
-      position:relative;
-      padding-left:50px;
-      padding-bottom:28px;
-    }
-    .exp-item:last-child{padding-bottom:0}
-    
-    .exp-dot{
-      position:absolute;
-      left:10px; top:4px;
-      width:18px; height:18px;
-      border-radius:50%;
-      background:var(--white);
-      border:3px solid var(--primary);
-      z-index:1;
-    }
-    .exp-item:first-child .exp-dot{
-      background:var(--primary);
-      box-shadow: 0 0 0 4px rgba(37,99,235,.2);
-    }
-    
-    .exp-header{
-      display:flex;
-      justify-content:space-between;
-      align-items:flex-start;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-    .exp-title{
-      font-size:16px;
-      font-weight:700;
-      color:var(--text);
-    }
-    .exp-company{
-      font-size:14px;
-      font-weight:600;
-      color:var(--primary);
-      margin-top:2px;
-    }
-    .exp-meta{
-      display:flex;
-      flex-direction:column;
-      align-items:flex-end;
-      gap:4px;
-    }
-    .exp-date{
-      font-size:12px;
-      font-weight:600;
-      color:var(--text-light);
-      background:var(--line);
-      padding:4px 12px;
-      border-radius:15px;
-    }
-    .exp-location{
-      font-size:11px;
-      color:var(--text-light);
-    }
-    
-    .exp-bullets{
-      margin-top:12px;
-      list-style:none;
-    }
-    .exp-bullets li{
-      position:relative;
-      padding-left:20px;
-      font-size:13px;
-      color:var(--text);
-      margin-bottom:8px;
-      line-height:1.5;
-    }
-    .exp-bullets li::before{
-      content:'▸';
-      position:absolute;
-      left:0;
-      color:var(--primary);
-      font-weight:bold;
-    }
-    
-    .exp-tech{
-      display:flex;
-      flex-wrap:wrap;
-      gap:6px;
-      margin-top:12px;
-    }
-    .exp-tech-tag{
-      font-size:11px;
-      padding:4px 10px;
-      background:rgba(37,99,235,.08);
-      color:var(--primary);
-      border-radius:15px;
-      font-weight:500;
-    }
-    
-    /* References */
-    .ref-grid{
-      display:grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap:16px;
-    }
-    .ref-card{
-      padding:20px;
-      border:1px solid var(--line);
-      border-radius:var(--radius-sm);
-      transition: all .2s;
-    }
-    .ref-card:hover{
-      border-color:var(--primary);
-      box-shadow: 0 0 0 3px rgba(37,99,235,.1);
-    }
-    .ref-name{
-      font-weight:700;
-      font-size:15px;
-      color:var(--text);
-      margin-bottom:4px;
-    }
-    .ref-role{
-      font-size:13px;
-      color:var(--primary);
-      font-weight:500;
-    }
-    .ref-company{
-      font-size:12px;
-      color:var(--text-light);
-      margin-bottom:10px;
-    }
-    .ref-phone{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      font-size:13px;
-      font-weight:600;
-      color:var(--text);
-    }
-    
-    /* Availability */
-    .availability{
-      margin-top:20px;
-      padding:20px;
-      background: linear-gradient(135deg, rgba(16,185,129,.08) 0%, rgba(6,182,212,.08) 100%);
-      border-radius:var(--radius-sm);
-      display:flex;
-      flex-wrap:wrap;
-      gap:12px;
-      align-items:center;
-    }
-    .avail-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      padding:8px 16px;
-      background:var(--white);
-      border-radius:25px;
-      font-size:13px;
-      font-weight:600;
-      box-shadow:var(--shadow);
-    }
-    .avail-badge.highlight{
-      background:var(--success);
-      color:var(--white);
-    }
-    
-    /* CTA Section */
-    .cta-card{
-      background: var(--gradient);
-      color:var(--white);
-      text-align:center;
-      padding:40px;
-    }
-    .cta-card:hover{
-      transform:translateY(-3px);
-    }
-    .cta-title{
-      font-size:22px;
-      font-weight:800;
-      margin-bottom:10px;
-    }
-    .cta-text{
-      font-size:14px;
-      opacity:.9;
-      margin-bottom:24px;
-      max-width:500px;
-      margin-left:auto;
-      margin-right:auto;
-    }
-    .cta-buttons{
-      display:flex;
-      gap:12px;
-      justify-content:center;
-      flex-wrap:wrap;
-    }
-    .cta-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:14px 24px;
-      border-radius:30px;
-      font-size:14px;
-      font-weight:700;
-      transition: all .2s;
-      border:none;
-      cursor:pointer;
-    }
-    .cta-btn.primary{
-      background:var(--white);
-      color:var(--text);
-    }
-    .cta-btn.primary:hover{
-      transform:scale(1.05);
-      box-shadow: 0 10px 30px rgba(0,0,0,.2);
-    }
-    .cta-btn.outline{
-      background:transparent;
-      color:var(--white);
-      border:2px solid rgba(255,255,255,.3);
-    }
-    .cta-btn.outline:hover{
-      background:rgba(255,255,255,.1);
-      border-color:rgba(255,255,255,.5);
-    }
-    
+    /* ============ Tokens ============ */
+    :root {
+      --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+      --font-display: 'Sora', var(--font-sans);
+      --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+      --bg: #f7f5f0;
+      --surface: #fffefb;
+      --surface-2: #efede7;
+      --ink: #191a1e;
+      --ink-2: #43454c;
+      --muted: #686b74;
+      --line: #e4e1d8;
+      --line-2: #d3cfc4;
+      --accent: #1f3ac2;
+      --accent-hover: #16289b;
+      --accent-soft: rgba(31, 58, 194, 0.07);
+      --accent-border: rgba(31, 58, 194, 0.28);
+      --ok: #0e9f6e;
+      --shadow-sm: 0 1px 2px rgba(25, 24, 20, 0.05);
+      --shadow-md: 0 10px 30px rgba(25, 24, 20, 0.09);
+      --edge: inset 0 1px 0 rgba(255, 255, 255, 0);
+      --glow-1: rgba(31, 58, 194, 0.055);
+      --glow-2: rgba(176, 108, 22, 0.05);
+      --noise-o: 0.035;
+
+      color-scheme: light;
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #0f1014;
+      --surface: #171a21;
+      --surface-2: #1e222b;
+      --ink: #ecedef;
+      --ink-2: #c0c3cb;
+      --muted: #9297a2;
+      --line: #272b34;
+      --line-2: #363c49;
+      --accent: #97a7ff;
+      --accent-hover: #b5c1ff;
+      --accent-soft: rgba(151, 167, 255, 0.09);
+      --accent-border: rgba(151, 167, 255, 0.3);
+      --ok: #34d399;
+      --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 12px 32px rgba(0, 0, 0, 0.5);
+      --edge: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+      --glow-1: rgba(122, 140, 255, 0.11);
+      --glow-2: rgba(122, 140, 255, 0.05);
+      --noise-o: 0.05;
+
+      color-scheme: dark;
+    }
+
+    /* ============ Base ============ */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      html { scroll-behavior: smooth; }
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      transition: background-color .25s ease, color .25s ease;
+    }
+
+    /* Atmósfera: resplandores suaves + grano de textura */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      pointer-events: none;
+      background:
+        radial-gradient(1100px 700px at 12% -10%, var(--glow-1), transparent 62%),
+        radial-gradient(900px 640px at 105% 14%, var(--glow-2), transparent 60%);
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: var(--noise-o);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+      background-size: 140px 140px;
+    }
+
+    ::selection { background: var(--accent); color: var(--bg); }
+
+    a { color: inherit; text-decoration: none; }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+      top: 12px;
+      z-index: 100;
+      background: var(--accent);
+      color: var(--bg);
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .skip-link:focus { left: 12px; }
+
+    svg { display: block; }
+
+    /* ============ Marco general ============ */
+    .frame {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 4vw, 48px);
+      display: grid;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+      gap: clamp(48px, 7vw, 110px);
+    }
+
+    /* ============ Sidebar ============ */
+    .side {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(40px, 7vh, 80px) 0 clamp(28px, 4.5vh, 56px);
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+    .side::-webkit-scrollbar { display: none; }
+
+    .portrait {
+      width: 106px;
+      height: 106px;
+      border-radius: 26px;
+      object-fit: cover;
+      border: 1px solid var(--line-2);
+      box-shadow: var(--edge), var(--shadow-md);
+      margin-bottom: 28px;
+      filter: saturate(.92);
+    }
+
+    .name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(36px, 3.9vw, 50px);
+      line-height: 1.06;
+      letter-spacing: -0.025em;
+    }
+    .name a { color: inherit; }
+    .name .dot { color: var(--accent); }
+
+    .role {
+      margin-top: 12px;
+      font-size: 17px;
+      font-weight: 500;
+      color: var(--ink-2);
+    }
+
+    .role-kicker {
+      margin-top: 6px;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .pitch {
+      margin-top: 18px;
+      max-width: 36ch;
+      font-size: 15px;
+      color: var(--muted);
+    }
+
+    .status {
+      margin-top: 22px;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 7px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--surface);
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--ink-2);
+      box-shadow: var(--shadow-sm);
+    }
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--ok);
+      flex: none;
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .status-dot { animation: ping 2.6s ease-out infinite; }
+      @keyframes ping {
+        0%   { box-shadow: 0 0 0 0 color-mix(in srgb, var(--ok) 45%, transparent); }
+        70%  { box-shadow: 0 0 0 7px transparent; }
+        100% { box-shadow: 0 0 0 0 transparent; }
+      }
+    }
+
+    /* Navegación */
+    .nav { margin-top: 52px; display: none; }
+    .nav ul { list-style: none; display: flex; flex-direction: column; gap: 2px; }
+    .nav a {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      padding: 7px 0;
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color .2s ease;
+    }
+    .nav a::before {
+      content: '';
+      width: 26px;
+      height: 1px;
+      background: var(--line-2);
+      transition: width .25s ease, background-color .25s ease;
+    }
+    .nav a:hover, .nav a.active { color: var(--ink); }
+    .nav a:hover::before, .nav a.active::before { width: 56px; background: var(--ink); }
+    .nav a.active { color: var(--accent); }
+    .nav a.active::before { background: var(--accent); }
+
+    /* Contacto sidebar */
+    .side-foot { display: flex; flex-direction: column; gap: 16px; margin-top: 48px; }
+
+    .contact-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+      color: var(--muted);
+      transition: color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+    .icon-btn:hover {
+      color: var(--accent);
+      border-color: var(--accent-border);
+      transform: translateY(-2px);
+    }
+
+    .locale {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* Toggle de tema */
+    .theme-toggle {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 50;
+      width: 42px;
+      height: 42px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--surface) 78%, transparent);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: var(--muted);
+      cursor: pointer;
+      transition: color .2s ease, border-color .2s ease;
+    }
+    .theme-toggle:hover { color: var(--ink); border-color: var(--line-2); }
+    .theme-toggle .icon-sun { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+    :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+    /* ============ Contenido ============ */
+    .content {
+      padding: clamp(48px, 9vh, 92px) 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(64px, 9vh, 96px);
+    }
+
+    section { scroll-margin-top: 32px; }
+
+    .sec-head {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 34px;
+    }
+    .sec-num {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+    }
+    .sec-title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(23px, 2.2vw, 27px);
+      letter-spacing: -0.02em;
+    }
+    .sec-head::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--line-2), transparent);
+      transform: translateY(-5px);
+    }
+
+    /* Sobre mí */
+    .prose p { color: var(--ink-2); font-size: 15.5px; }
+    .prose p + p { margin-top: 16px; }
+    .prose strong { color: var(--ink); font-weight: 600; }
+    .prose a {
+      color: var(--accent);
+      font-weight: 500;
+      border-bottom: 1px solid var(--accent-border);
+      transition: border-color .2s ease, color .2s ease;
+    }
+    .prose a:hover { color: var(--accent-hover); border-bottom-color: currentColor; }
+
+    .lede {
+      margin-top: 24px;
+      padding: 18px 22px;
+      border-left: 2px solid var(--accent);
+      background: var(--accent-soft);
+      border-radius: 0 12px 12px 0;
+      font-size: 14.5px;
+      color: var(--ink-2);
+    }
+    .lede strong { color: var(--ink); }
+
+    /* Experiencia */
+    .xp-list { display: flex; flex-direction: column; gap: 6px; }
+
+    .xp {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 6px 30px;
+      padding: 22px;
+      margin: 0 -22px;
+      border: 1px solid transparent;
+      border-radius: 16px;
+      transition: background-color .2s ease, border-color .2s ease, box-shadow .2s ease;
+    }
+    .xp:hover {
+      background: var(--surface);
+      border-color: var(--line);
+      box-shadow: var(--edge), var(--shadow-sm);
+    }
+
+    .xp-meta {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-top: 4px;
+      line-height: 1.9;
+    }
+    .xp-meta .place { display: block; text-transform: none; letter-spacing: 0.02em; opacity: .85; }
+
+    .xp-role { font-weight: 600; font-size: 16px; line-height: 1.35; }
+    .xp-org { color: var(--accent); font-weight: 500; font-size: 14px; margin-top: 2px; }
+
+    .xp-points {
+      margin-top: 12px;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .xp-points li {
+      position: relative;
+      padding-left: 19px;
+      font-size: 14px;
+      color: var(--ink-2);
+      line-height: 1.55;
+    }
+    .xp-points li::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 0.6em;
+      width: 5px;
+      height: 5px;
+      border-radius: 2px;
+      background: var(--accent);
+      opacity: .65;
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 14px; }
+    .chip {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.02em;
+      padding: 5px 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink-2);
+      background: var(--surface-2);
+      white-space: nowrap;
+    }
+    .chip.accent {
+      color: var(--accent);
+      border-color: var(--accent-border);
+      background: var(--accent-soft);
+    }
+
+    /* Proyectos */
+    .proj-list { display: flex; flex-direction: column; gap: 16px; }
+
+    .proj {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--edge), var(--shadow-sm);
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+    .proj:hover {
+      border-color: var(--accent-border);
+      box-shadow: var(--edge), var(--shadow-md);
+      transform: translateY(-2px);
+    }
+    .proj::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 20px;
+      bottom: 20px;
+      width: 3px;
+      border-radius: 0 3px 3px 0;
+      background: var(--accent);
+      opacity: 0;
+      transform: scaleY(.4);
+      transition: opacity .25s ease, transform .25s ease;
+    }
+    .proj:hover::before { opacity: 1; transform: none; }
+
+    .proj-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .proj-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 16px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .proj-badge {
+      font-family: var(--font-mono);
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      background: var(--accent-soft);
+      padding: 3px 9px;
+      border-radius: 999px;
+    }
+    .proj-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      flex: none;
+      transition: color .2s ease;
+    }
+    .proj-link svg { transition: transform .2s ease; }
+    .proj:hover .proj-link svg, .proj-link:hover svg { transform: translate(2px, -2px); }
+    .proj-link:hover { color: var(--accent-hover); }
+
+    .proj-kicker { font-size: 14px; font-weight: 500; color: var(--ink-2); margin-top: 8px; }
+    .proj-desc { font-size: 14px; color: var(--muted); margin-top: 6px; line-height: 1.6; }
+    .proj-desc strong { color: var(--ink-2); font-weight: 600; }
+
+    /* Servicios */
+    .services {
+      padding: 26px;
+      border: 1px solid var(--accent-border);
+      background: var(--accent-soft);
+      border-radius: 16px;
+    }
+    .services h3 {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .services p { font-size: 14.5px; color: var(--ink-2); margin-top: 10px; max-width: 62ch; }
+    .services .chips { margin-top: 16px; }
+    .services .chip { background: color-mix(in srgb, var(--surface) 72%, transparent); }
+
+    /* Habilidades */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px 32px;
+    }
+    .skill-group h3 {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .skill-group h3::before {
+      content: '';
+      width: 14px;
+      height: 1px;
+      background: var(--accent);
+    }
+
+    /* Formación */
+    .edu-list { display: flex; flex-direction: column; }
+    .edu {
+      display: grid;
+      grid-template-columns: 128px 1fr;
+      gap: 4px 30px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .edu:first-child { padding-top: 0; }
+    .edu-when {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-top: 3px;
+    }
+    .edu-what { font-weight: 600; font-size: 15px; }
+    .edu-where { font-size: 13.5px; color: var(--muted); margin-top: 2px; }
+    .edu-note {
+      display: inline-block;
+      margin-top: 8px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--accent);
+      border: 1px solid var(--accent-border);
+      background: var(--accent-soft);
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+
+    .certs { margin-top: 34px; }
+    .certs-title {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .cert {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .cert:last-child { border-bottom: none; }
+    .cert-name { font-weight: 500; font-size: 14.5px; }
+    .cert-issuer { font-size: 12.5px; color: var(--muted); margin-top: 1px; }
+    .cert-year {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--muted);
+      flex: none;
+    }
+
+    /* Referencias */
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .ref {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+      box-shadow: var(--edge), var(--shadow-sm);
+    }
+    .ref-name { font-weight: 600; font-size: 15px; }
+    .ref-role { font-size: 13px; color: var(--ink-2); margin-top: 2px; }
+    .ref-org { font-family: var(--font-mono); font-size: 11.5px; color: var(--muted); margin-top: 2px; letter-spacing: 0.04em; }
+    .ref-tel {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      font-family: var(--font-mono);
+      font-size: 12.5px;
+      color: var(--accent);
+      transition: color .2s ease;
+    }
+    .ref-tel:hover { color: var(--accent-hover); }
+
+    /* Contacto */
+    .outro { padding-bottom: 8px; }
+    .outro-title {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: clamp(26px, 3vw, 34px);
+      letter-spacing: -0.02em;
+    }
+    .outro-text {
+      margin-top: 14px;
+      max-width: 52ch;
+      font-size: 15.5px;
+      color: var(--ink-2);
+    }
+    .outro-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 13px 22px;
+      border-radius: 12px;
+      font-size: 14px;
+      font-weight: 600;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: background-color .2s ease, border-color .2s ease, color .2s ease, transform .2s ease;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary {
+      background: var(--accent);
+      color: var(--bg);
+      box-shadow: 0 10px 26px color-mix(in srgb, var(--accent) 28%, transparent);
+    }
+    .btn-primary:hover { background: var(--accent-hover); transform: translateY(-1px); }
+    .btn-ghost { border-color: var(--line-2); color: var(--ink); background: var(--surface); }
+    .btn-ghost:hover { border-color: var(--ink); }
+
     /* Footer */
-    .footer{
-      text-align:center;
-      padding:24px;
-      font-size:12px;
-      color:var(--text-light);
+    .foot {
+      margin-top: clamp(56px, 8vh, 80px);
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px 24px;
+      font-size: 13px;
+      color: var(--muted);
     }
-    
-    /* Responsive */
-    @media (max-width: 900px){
-      .layout{grid-template-columns: 1fr}
-      .hero-content{grid-template-columns: 1fr; text-align:center; justify-items:center}
-      .hero-tags{justify-content:center}
-      .hero-contact{justify-content:center}
-      .quick-actions{justify-content:center}
-      .ref-grid{grid-template-columns: 1fr}
-      .exp-meta{align-items:flex-start}
+    .foot .colophon {
+      font-family: var(--font-mono);
+      font-size: 11.5px;
+      letter-spacing: 0.04em;
     }
-    
-    @media (max-width: 600px){
-      .hero-content{padding:24px}
-      .avatar-ring{width:140px; height:140px}
-      .hero-info h1{font-size:24px}
-      .card{padding:20px}
-      .cta-card{padding:30px}
+
+    /* ============ Reveal (progresivo, sólo con JS) ============ */
+    .js-reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity .55s ease, transform .55s ease;
     }
-    
-    /* Print Styles */
-    @media print{
-      body{background:#fff}
-      .container{padding:0; max-width:100%}
-      .hero{box-shadow:none; border-radius:0}
-      .quick-actions, .action-btn, .cta-card{display:none}
-      .side-card, .card{box-shadow:none; border:1px solid #ddd}
-      .layout{display:block}
-      .sidebar{margin-bottom:20px}
+    .js-reveal.in { opacity: 1; transform: none; }
+
+    /* ============ Responsive ============ */
+    @media (min-width: 981px) {
+      .nav { display: block; }
+    }
+
+    /* Pantallas de poca altura: sidebar compacta para que nada se corte */
+    @media (min-width: 981px) and (max-height: 940px) {
+      .side { padding-top: 40px; padding-bottom: 26px; }
+      .portrait { width: 82px; height: 82px; border-radius: 20px; margin-bottom: 18px; }
+      .name { font-size: clamp(30px, 3vw, 38px); }
+      .pitch { margin-top: 13px; }
+      .status { margin-top: 15px; }
+      .nav { margin-top: 30px; }
+      .nav a { padding: 5px 0; }
+      .side-foot { margin-top: 28px; gap: 12px; }
+    }
+
+    @media (min-width: 981px) and (max-height: 760px) {
+      .portrait { display: none; }
+      .pitch { display: none; }
+      .nav { margin-top: 22px; }
+    }
+
+    @media (max-width: 980px) {
+      .frame { grid-template-columns: minmax(0, 1fr); gap: 0; }
+      .side {
+        position: static;
+        height: auto;
+        max-height: none;
+        padding-bottom: 0;
+      }
+      .side-foot { margin-top: 32px; }
+      .content { padding-top: clamp(48px, 7vh, 64px); }
+    }
+
+    @media (max-width: 560px) {
+      .xp { grid-template-columns: 1fr; padding: 18px; margin: 0 -18px; }
+      .xp-meta { padding-top: 0; line-height: 1.6; }
+      .xp-meta .place { display: inline; }
+      .xp-meta .place::before { content: '· '; }
+      .edu { grid-template-columns: 1fr; }
+      .outro-actions .btn { flex: 1 1 auto; justify-content: center; }
+    }
+
+    /* ============ Impresión ============ */
+    @page { margin: 14mm; }
+
+    @media print {
+      :root, :root[data-theme="dark"] {
+        --bg: #fff;
+        --surface: #fff;
+        --surface-2: #fff;
+        --ink: #111;
+        --ink-2: #333;
+        --muted: #555;
+        --line: #ddd;
+        --line-2: #ccc;
+        --accent: #1a2f9e;
+        --accent-soft: #fff;
+        --accent-border: #bbb;
+        --shadow-sm: none;
+        --shadow-md: none;
+      }
+      body { font-size: 12.5px; }
+      .theme-toggle, .nav, .skip-link, .status, .js-reveal { display: revert; }
+      .theme-toggle, .nav { display: none !important; }
+      .js-reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      .frame { display: block; max-width: 100%; padding: 0; }
+      .side { position: static; height: auto; padding: 0 0 18px; }
+      .print-name { display: block !important; }
+      .name { font-size: 26px; }
+      .pitch { max-width: none; }
+      .portrait { display: none; }
+      .contact-row { display: none; }
+      .print-contact { display: block !important; }
+      .content { padding: 0; gap: 26px; }
+      section { break-inside: avoid-page; }
+      .xp, .proj { break-inside: avoid; }
+      .xp { padding: 12px 0; margin: 0; border: none; border-bottom: 1px solid var(--line); border-radius: 0; }
+      .proj { padding: 12px 0; border: none; border-bottom: 1px solid var(--line); border-radius: 0; box-shadow: none; }
+      .services { border: 1px solid var(--line); }
+      .proj-link::after { content: ' — ' attr(href); font-size: 10.5px; color: #555; }
+      .proj-link svg { display: none; }
+      .outro, .foot .colophon { display: none; }
+      .foot { margin-top: 18px; padding: 12px 0 0; }
+    }
+
+    .print-name, .print-contact { display: none; }
+    .print-contact {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--ink-2);
+      margin-top: 10px;
+      letter-spacing: 0.02em;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- Hero Section -->
-    <header class="hero">
-      <div class="hero-content">
-        <div class="avatar-container">
-          <div class="avatar-ring">
-            <img class="avatar" src="foto.jpg" alt="Jenner Joan Villalba Paladines - Ingeniero en TI" />
-          </div>
+  <button class="theme-toggle" type="button" aria-label="Cambiar tema claro / oscuro" title="Cambiar tema">
+    <!-- luna -->
+    <svg class="icon-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    <!-- sol -->
+    <svg class="icon-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+  </button>
+
+  <div class="frame">
+
+    <!-- ============ Sidebar ============ -->
+    <header class="side">
+      <div>
+        <img class="portrait" src="foto.jpg" alt="Retrato de Jenner Villalba" width="92" height="92" />
+
+        <h1 class="name"><a href="#contenido">Jenner Villalba<span class="dot">.</span></a></h1>
+        <span class="print-name">Jenner Joan Villalba Paladines</span>
+
+        <p class="role">Desarrollador de Software</p>
+        <p class="role-kicker">Chatbots · Automatización · IA aplicada</p>
+
+        <p class="pitch">
+          Construyo bots de WhatsApp, plataformas web y automatizaciones que los negocios usan de verdad.
+        </p>
+
+        <p class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Disponible para empleo y freelance
+        </p>
+
+        <div class="print-contact">
+          +593 99 486 6214 · jennerjoanvillalba@gmail.com<br />
+          github.com/VillalbaJ03 · Machala, El Oro, Ecuador
         </div>
-        
-        <div class="hero-info">
-          <h1>Jenner Joan Villalba Paladines</h1>
-          <div class="hero-role">Ingeniero en Tecnologías de la Información</div>
-          
-          <div class="hero-tags">
-            <span class="tag">🎓 9no Semestre UTMACH</span>
-            <span class="tag">📍 Machala, Ecuador</span>
-            <span class="tag">💼 Prácticas Completadas</span>
-          </div>
-          
-          <div class="hero-contact">
-            <a href="tel:+593994866214" class="contact-link">
-              <span class="contact-icon">📞</span>
-              <span>+593 994 866 214</span>
-            </a>
-            <a href="mailto:jennerjoanvillalba@gmail.com" class="contact-link">
-              <span class="contact-icon">✉️</span>
-              <span>jennerjoanvillalba@gmail.com</span>
-            </a>
-            <span class="contact-link">
-              <span class="contact-icon">🏠</span>
-              <span>Urb. Arboleia, El Cambio</span>
-            </span>
-          </div>
-        </div>
+
+        <nav class="nav" aria-label="Secciones">
+          <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#formacion">Formación</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-      
-      <div class="quick-actions">
-        <button class="action-btn primary" onclick="document.getElementById('experience').scrollIntoView({behavior:'smooth'})">
-          📋 Ver Experiencia
-        </button>
-        <a href="https://wa.me/593994866214?text=Hola%20Jenner,%20vi%20tu%20CV%20y%20me%20gustaría%20contactarte" target="_blank" class="action-btn secondary">
-          💬 WhatsApp
-        </a>
-        <a href="https://mail.google.com/mail/?view=cm&to=jennerjoanvillalba@gmail.com&su=Contacto%20desde%20tu%20CV" target="_blank" class="action-btn secondary">
-          ✉️ Correo
-        </a>
+
+      <div class="side-foot">
+        <div class="contact-row">
+          <a class="icon-btn" href="mailto:jennerjoanvillalba@gmail.com" aria-label="Enviar correo" title="jennerjoanvillalba@gmail.com">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://wa.me/593994866214?text=Hola%20Jenner%2C%20vi%20tu%20CV%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp" title="WhatsApp">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+          </a>
+          <a class="icon-btn" href="tel:+593994866214" aria-label="Llamar al +593 99 486 6214" title="+593 99 486 6214">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://github.com/VillalbaJ03" target="_blank" rel="noopener" aria-label="Perfil de GitHub" title="GitHub">
+            <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
+          </a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/jenner-villalba-aa76143b8/" target="_blank" rel="noopener" aria-label="Perfil de LinkedIn" title="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/></svg>
+          </a>
+        </div>
+        <p class="locale">Machala · El Oro · Ecuador</p>
       </div>
     </header>
 
-    <div class="layout">
-      <!-- Sidebar -->
-      <aside class="sidebar">
-        
-        <!-- Education -->
-        <div class="side-card">
-          <h3 class="side-title">Formación Académica</h3>
-          
-          <div class="edu-item">
-            <div class="edu-degree">Ingeniería en Tecnologías de la Información</div>
-            <div class="edu-school">Universidad Técnica de Machala</div>
-            <span class="edu-badge current">🎯 9no Semestre - En curso</span>
-          </div>
-          
-          <div class="edu-item">
-            <div class="edu-degree">Bachillerato General Unificado</div>
-            <div class="edu-school">Colegio Remigio Geo Gómez Guerrero</div>
-            <div class="edu-school">Huaquillas • 2016 - 2020</div>
-            <span class="edu-badge completed">✓ Completado</span>
-          </div>
-        </div>
-        
-        <!-- Certifications -->
-        <div class="side-card">
-          <h3 class="side-title">Certificaciones</h3>
-          
-          <div class="cert-item">
-            <div class="cert-icon">🛡️</div>
-            <div class="cert-info">
-              <div class="cert-name">Introducción a la Ciberseguridad</div>
-              <div class="cert-issuer">Cisco Networking Academy</div>
-              <div class="cert-year">2024</div>
-            </div>
-          </div>
-          
-          <div class="cert-item">
-            <div class="cert-icon">⚠️</div>
-            <div class="cert-info">
-              <div class="cert-name">Gestión de Amenazas Cibernéticas</div>
-              <div class="cert-issuer">Cisco Networking Academy</div>
-              <div class="cert-year">2024</div>
-            </div>
-          </div>
-          
-          <div class="cert-item">
-            <div class="cert-icon">🐍</div>
-            <div class="cert-info">
-              <div class="cert-name">Fundamentos de Python 1</div>
-              <div class="cert-issuer">Cisco Networking Academy</div>
-              <div class="cert-year">2025</div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Skills -->
-        <div class="side-card">
-          <h3 class="side-title">Habilidades</h3>
-          
-          <div class="skill-category">
-            <div class="skill-cat-title">💻 Técnicas</div>
-            <div class="skill-tags">
-              <span class="skill-tag tech">Node.js</span>
-              <span class="skill-tag tech">React</span>
-              <span class="skill-tag tech">PostgreSQL</span>
-              <span class="skill-tag tech">MongoDB</span>
-              <span class="skill-tag tech">Python</span>
-              <span class="skill-tag tech">Nginx</span>
-              <span class="skill-tag tech">Linux/VPS</span>
-              <span class="skill-tag tech">Redes</span>
-              <span class="skill-tag tech">Fibra Óptica</span>
-            </div>
-          </div>
-          
-          <div class="skill-category">
-            <div class="skill-cat-title">🧠 Blandas</div>
-            <div class="skill-tags">
-              <span class="skill-tag soft">Trabajo en equipo</span>
-              <span class="skill-tag soft">Aprendizaje rápido</span>
-              <span class="skill-tag soft">Responsabilidad</span>
-              <span class="skill-tag soft">Puntualidad</span>
-              <span class="skill-tag soft">Atención al cliente</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Languages -->
-        <div class="side-card">
-          <h3 class="side-title">Idiomas</h3>
-          
-          <div class="lang-item">
-            <span class="lang-name">🇪🇸 Español</span>
-            <span class="lang-level native">Nativo</span>
-          </div>
-          <div class="lang-item">
-            <span class="lang-name">🇺🇸 Inglés</span>
-            <span class="lang-level basic">Básico</span>
-          </div>
-        </div>
-        
-      </aside>
+    <!-- ============ Contenido ============ -->
+    <main class="content" id="contenido">
 
-      <!-- Main Content -->
-      <main class="main">
-        
-        <!-- Profile -->
-        <section class="card" id="profile">
-          <div class="card-header">
-            <h2 class="card-title">
-              <span class="card-title-icon">👤</span>
-              Perfil Profesional
-            </h2>
-          </div>
-          
-          <p class="profile-text">
-            Estudiante de Noveno Semestre de <strong>Ingeniería en Tecnologías de la Información</strong> en la Universidad Técnica de Machala. Persona responsable, puntual y comprometida, con experiencia en <strong>mantenimiento de equipos</strong> y <strong>apoyo técnico</strong>.
+      <section id="sobre-mi" aria-label="Sobre mí">
+        <div class="sec-head">
+          <span class="sec-num">01</span>
+          <h2 class="sec-title">Sobre mí</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Estudiante de décimo semestre de <strong>Ingeniería en Tecnologías de la Información</strong> en la
+            Universidad Técnica de Machala, enfocado en <strong>desarrollo de software</strong>, <strong>chatbots</strong>
+            y <strong>automatización con IA</strong>. Con prácticas completadas en infraestructura de servidores,
+            desarrollo full-stack y redes.
           </p>
-          
-          <p class="profile-text" style="margin-top:14px;">
-            Cuento con conocimientos básicos en <strong>bases de datos</strong>, <strong>desarrollo de software</strong>, sistemas, sitios web y aplicaciones. Tengo facilidad para aprender, trabajar en equipo y atender al público, buscando una oportunidad laboral donde pueda aportar mis habilidades y seguir adquiriendo experiencia.
+          <p>
+            Desarrollo soluciones prácticas para pequeños negocios e instituciones con <strong>Python</strong>,
+            <strong>Node.js</strong> y <strong>React</strong>: bots de WhatsApp para inventario y ventas, plataformas
+            web y un chatbot de RR.&nbsp;HH. como proyecto de tesis. Busco una oportunidad donde pueda aportar desde
+            el primer día y seguir creciendo profesionalmente.
           </p>
-        </section>
+        </div>
+        <p class="lede">
+          <strong>Especialidad:</strong> convertir procesos manuales —inventario, ventas, atención al cliente,
+          consultas repetitivas— en automatizaciones que los negocios pueden usar de verdad.
+        </p>
+      </section>
 
-        <!-- Experience -->
-        <section class="card" id="experience">
-          <div class="card-header">
-            <h2 class="card-title">
-              <span class="card-title-icon">💼</span>
-              Experiencia Profesional
-            </h2>
-          </div>
-          
-          <div class="timeline">
-            
-            <div class="exp-item">
-              <div class="exp-dot"></div>
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Practicante de Tecnologías de la Información</div>
-                  <div class="exp-company">FONET Cía. Ltda</div>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-date">2025</span>
-                  <span class="exp-location">📍 Santa Rosa, El Oro</span>
-                </div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Administración y configuración de servidores VPS en entorno Linux</li>
-                <li>Instalación, configuración y gestión de bases de datos MongoDB</li>
-                <li>Despliegue completo de aplicaciones web (backend y frontend)</li>
-                <li>Configuración de dominios, servidor Nginx y certificados SSL/TLS</li>
-              </ul>
-              <div class="exp-tech">
-                <span class="exp-tech-tag">VPS</span>
-                <span class="exp-tech-tag">Linux</span>
-                <span class="exp-tech-tag">MongoDB</span>
-                <span class="exp-tech-tag">Nginx</span>
-                <span class="exp-tech-tag">SSL</span>
-              </div>
-            </div>
-            
-            <div class="exp-item">
-              <div class="exp-dot"></div>
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Practicante en Desarrollo de Software</div>
-                  <div class="exp-company">SILVIANET</div>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-date">2024 - 2025</span>
-                  <span class="exp-location">📍 Huaquillas</span>
-                </div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Desarrollo de plataforma web empresarial con arquitectura full-stack</li>
-                <li>Implementación de sistema CRUD con autenticación de usuarios</li>
-                <li>Diseño y desarrollo de sitio web informativo institucional</li>
-              </ul>
-              <div class="exp-tech">
-                <span class="exp-tech-tag">Node.js</span>
-                <span class="exp-tech-tag">React</span>
-                <span class="exp-tech-tag">PostgreSQL</span>
-                <span class="exp-tech-tag">API REST</span>
-              </div>
-            </div>
-            
-            <div class="exp-item">
-              <div class="exp-dot"></div>
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Practicante en Redes y Soporte Técnico</div>
-                  <div class="exp-company">COMM&NET S.A</div>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-date">2024</span>
-                  <span class="exp-location">📍 Machala</span>
-                </div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Instalación profesional de fibra óptica para clientes residenciales y empresariales</li>
-                <li>Configuración de routers, switches y equipos de telecomunicaciones</li>
-                <li>Soporte técnico de primer nivel y mantenimiento preventivo de redes</li>
-              </ul>
-              <div class="exp-tech">
-                <span class="exp-tech-tag">Fibra Óptica</span>
-                <span class="exp-tech-tag">Networking</span>
-                <span class="exp-tech-tag">Routers</span>
-                <span class="exp-tech-tag">Soporte</span>
-              </div>
-            </div>
-            
-            <div class="exp-item">
-              <div class="exp-dot"></div>
-              <div class="exp-header">
-                <div>
-                  <div class="exp-title">Soporte y Mantenimiento de Equipos</div>
-                  <div class="exp-company">Cooperativa "11 de Junio"</div>
-                </div>
-                <div class="exp-meta">
-                  <span class="exp-date">2024</span>
-                  <span class="exp-location">📍 Machala</span>
-                </div>
-              </div>
-              <ul class="exp-bullets">
-                <li>Mantenimiento preventivo y correctivo de equipos de cómputo</li>
-                <li>Diagnóstico de fallas y reparación de hardware</li>
-                <li>Soporte técnico directo a usuarios internos de la cooperativa</li>
-              </ul>
-              <div class="exp-tech">
-                <span class="exp-tech-tag">Hardware</span>
-                <span class="exp-tech-tag">Mantenimiento</span>
-                <span class="exp-tech-tag">Soporte</span>
-              </div>
-            </div>
-            
-          </div>
-        </section>
+      <section id="experiencia" aria-label="Experiencia profesional">
+        <div class="sec-head">
+          <span class="sec-num">02</span>
+          <h2 class="sec-title">Experiencia</h2>
+        </div>
 
-        <!-- References -->
-        <section class="card" id="references">
-          <div class="card-header">
-            <h2 class="card-title">
-              <span class="card-title-icon">👥</span>
-              Referencias Profesionales
-            </h2>
-          </div>
-          
-          <div class="ref-grid">
-            <div class="ref-card">
-              <div class="ref-name">Tnlgo. Jhon Lennon Estrada</div>
-              <div class="ref-role">Jefe de Área Técnica</div>
-              <div class="ref-company">SILVIANET</div>
-              <a href="tel:+593958654060" class="ref-phone">
-                📞 +593 95 865 4060
+        <div class="xp-list">
+
+          <article class="xp">
+            <div class="xp-meta">
+              2025
+              <span class="place">Santa Rosa, El Oro</span>
+            </div>
+            <div>
+              <h3 class="xp-role">Practicante de Tecnologías de la Información</h3>
+              <p class="xp-org">FONET Cía. Ltda.</p>
+              <ul class="xp-points">
+                <li>Administración y configuración de servidores VPS en entorno Linux.</li>
+                <li>Instalación, configuración y gestión de bases de datos MongoDB.</li>
+                <li>Despliegue completo de aplicaciones web (backend y frontend).</li>
+                <li>Configuración de dominios, servidor Nginx y certificados SSL/TLS.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Linux</span>
+                <span class="chip">VPS</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">Nginx</span>
+                <span class="chip">SSL/TLS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xp">
+            <div class="xp-meta">
+              2024 — 2025
+              <span class="place">Huaquillas</span>
+            </div>
+            <div>
+              <h3 class="xp-role">Practicante en Desarrollo de Software</h3>
+              <p class="xp-org">SILVIANET</p>
+              <ul class="xp-points">
+                <li>Desarrollo de plataforma web empresarial con arquitectura full-stack.</li>
+                <li>Implementación de sistema CRUD con autenticación de usuarios.</li>
+                <li>Diseño y desarrollo de sitio web informativo institucional.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Node.js</span>
+                <span class="chip">React</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">API REST</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="xp">
+            <div class="xp-meta">
+              2024
+              <span class="place">Machala</span>
+            </div>
+            <div>
+              <h3 class="xp-role">Practicante en Redes y Soporte Técnico</h3>
+              <p class="xp-org">COMM&amp;NET S.A.</p>
+              <ul class="xp-points">
+                <li>Instalación profesional de fibra óptica para clientes residenciales y empresariales.</li>
+                <li>Configuración de routers, switches y equipos de telecomunicaciones.</li>
+                <li>Soporte técnico de primer nivel y mantenimiento preventivo de redes.</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Fibra óptica</span>
+                <span class="chip">Networking</span>
+                <span class="chip">Routers</span>
+                <span class="chip">Soporte</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section id="proyectos" aria-label="Proyectos">
+        <div class="sec-head">
+          <span class="sec-num">03</span>
+          <h2 class="sec-title">Proyectos</h2>
+        </div>
+
+        <div class="proj-list">
+
+          <article class="proj">
+            <div class="proj-head">
+              <h3 class="proj-name">saasfe</h3>
+              <a class="proj-link" href="https://github.com/VillalbaJ03/saasfe" target="_blank" rel="noopener" aria-label="Ver saasfe en GitHub">
+                GitHub
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
               </a>
             </div>
-            
-            <div class="ref-card">
-              <div class="ref-name">Tnlgo. Darwin Ontaneda Medina</div>
-              <div class="ref-role">Técnico Especialista</div>
-              <div class="ref-company">COMM&NET S.A</div>
-              <a href="tel:+593968150737" class="ref-phone">
-                📞 +593 96 815 0737
-              </a>
+            <p class="proj-kicker">SaaS de facturación electrónica (SRI) para PYMES</p>
+            <p class="proj-desc">
+              <strong>Proyecto terminado y funcional:</strong> plataforma para emitir comprobantes electrónicos
+              conforme al SRI, pensada para pequeñas y medianas empresas. Frontend construido con React, Vite y
+              shadcn/ui.
+            </p>
+            <div class="chips">
+              <span class="chip">React</span>
+              <span class="chip">Vite</span>
+              <span class="chip">shadcn/ui</span>
+              <span class="chip accent">SaaS</span>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-head">
+              <h3 class="proj-name">tienda_cielo</h3>
+            </div>
+            <p class="proj-kicker">App web + bot de WhatsApp para la gestión completa de una tienda</p>
+            <p class="proj-desc">
+              Inventario, ventas, fiados y finanzas en un solo sistema. <strong>Unifiqué la sincronización entre la
+              app y el bot para operar sobre un único inventario en tiempo real, eliminando descuadres.</strong>
+            </p>
+            <div class="chips">
+              <span class="chip">React / Vite</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">Node.js</span>
+              <span class="chip accent">Bot de WhatsApp</span>
+            </div>
+          </article>
+
+          <article class="proj">
+            <div class="proj-head">
+              <h3 class="proj-name">Chatbot de RR. HH. <span class="proj-badge">Tesis</span></h3>
+            </div>
+            <p class="proj-kicker">Asistente conversacional de talento humano para una institución pública</p>
+            <p class="proj-desc">
+              Gestión de permisos, licencias y consultas normativas mediante detección de intención en español.
+            </p>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">NLP</span>
+              <span class="chip accent">Chatbot IA</span>
+            </div>
+          </article>
+
+          <aside class="services" aria-label="Servicios freelance">
+            <h3>Servicios — automatización para pequeños negocios</h3>
+            <p>
+              Automatizo la gestión de pequeños negocios con bots de WhatsApp: toma de pedidos, control de
+              inventario, registro de ventas y cuentas por cobrar, sin que el dueño tenga que aprender un sistema
+              nuevo. Entrego el bot conectado, el catálogo cargado y un panel web de administración listo para usar.
+            </p>
+            <div class="chips">
+              <span class="chip">Bots de WhatsApp</span>
+              <span class="chip">Inventario y ventas</span>
+              <span class="chip">Panel de administración</span>
+              <span class="chip">Base de datos en la nube</span>
+            </div>
+          </aside>
+
+        </div>
+      </section>
+
+      <section id="habilidades" aria-label="Habilidades">
+        <div class="sec-head">
+          <span class="sec-num">04</span>
+          <h2 class="sec-title">Habilidades</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>IA y automatización</h3>
+            <div class="chips">
+              <span class="chip">Chatbots</span>
+              <span class="chip">Automatización</span>
+              <span class="chip">WhatsApp API</span>
+              <span class="chip">IA aplicada</span>
             </div>
           </div>
-          
-          <div class="availability">
-            <span class="avail-badge highlight">✓ Disponible para trabajar</span>
-            <span class="avail-badge">🖥️ Soporte Técnico</span>
-            <span class="avail-badge">🌐 Redes</span>
-            <span class="avail-badge">💻 Desarrollo Web</span>
-            <span class="avail-badge">☁️ Servidores</span>
+
+          <div class="skill-group">
+            <h3>Desarrollo</h3>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">React</span>
+              <span class="chip">Vite</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">API REST</span>
+              <span class="chip">Git / GitHub</span>
+            </div>
           </div>
-        </section>
 
-        <!-- CTA -->
-        <section class="card cta-card">
-          <div class="cta-title">¿Interesado en mi perfil?</div>
-          <p class="cta-text">
-            Estoy disponible para nuevas oportunidades laborales. ¡No dudes en contactarme!
-          </p>
-          <div class="cta-buttons">
-            <a href="https://wa.me/593994866214?text=Hola%20Jenner,%20vi%20tu%20CV%20y%20me%20gustaría%20contactarte" target="_blank" class="cta-btn primary">
-              💬 WhatsApp
-            </a>
-            <a href="https://mail.google.com/mail/?view=cm&to=jennerjoanvillalba@gmail.com&su=Contacto%20desde%20tu%20CV" target="_blank" class="cta-btn outline">
-              ✉️ Enviar Correo
-            </a>
-            <a href="tel:+593994866214" class="cta-btn outline">
-              📞 Llamar
+          <div class="skill-group">
+            <h3>Infraestructura y redes</h3>
+            <div class="chips">
+              <span class="chip">Linux / VPS</span>
+              <span class="chip">Nginx</span>
+              <span class="chip">Redes</span>
+              <span class="chip">Fibra óptica</span>
+              <span class="chip">Ciberseguridad</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Competencias e idiomas</h3>
+            <div class="chips">
+              <span class="chip">Trabajo en equipo</span>
+              <span class="chip">Comunicación con clientes</span>
+              <span class="chip">Aprendizaje rápido</span>
+              <span class="chip">Responsabilidad</span>
+              <span class="chip accent">Español — nativo</span>
+              <span class="chip accent">Inglés — básico</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="formacion" aria-label="Formación académica">
+        <div class="sec-head">
+          <span class="sec-num">05</span>
+          <h2 class="sec-title">Formación</h2>
+        </div>
+
+        <div class="edu-list">
+          <div class="edu">
+            <div class="edu-when">En curso</div>
+            <div>
+              <h3 class="edu-what">Ingeniería en Tecnologías de la Información</h3>
+              <p class="edu-where">Universidad Técnica de Machala</p>
+              <span class="edu-note">10.º semestre</span>
+            </div>
+          </div>
+
+          <div class="edu">
+            <div class="edu-when">2016 — 2020</div>
+            <div>
+              <h3 class="edu-what">Bachillerato General Unificado</h3>
+              <p class="edu-where">Colegio Remigio Geo Gómez Guerrero · Huaquillas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs">
+          <p class="certs-title">Certificaciones</p>
+
+          <div class="cert">
+            <div>
+              <p class="cert-name">Fundamentos de Python 1</p>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+            <span class="cert-year">2025</span>
+          </div>
+
+          <div class="cert">
+            <div>
+              <p class="cert-name">Gestión de Amenazas Cibernéticas</p>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+            <span class="cert-year">2024</span>
+          </div>
+
+          <div class="cert">
+            <div>
+              <p class="cert-name">Introducción a la Ciberseguridad</p>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+            <span class="cert-year">2024</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="referencias" aria-label="Referencias profesionales">
+        <div class="sec-head">
+          <span class="sec-num">06</span>
+          <h2 class="sec-title">Referencias</h2>
+        </div>
+
+        <div class="ref-grid">
+          <div class="ref">
+            <p class="ref-name">Tnlgo. Jhon Lennon Estrada</p>
+            <p class="ref-role">Jefe de Área Técnica</p>
+            <p class="ref-org">SILVIANET</p>
+            <a class="ref-tel" href="tel:+593958654060">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>
+              +593 95 865 4060
             </a>
           </div>
-        </section>
 
-      </main>
-    </div>
-    
-    <footer class="footer">
-      <p>© 2026 Jenner Joan Villalba Paladines • Creado con ❤️ en Machala, Ecuador</p>
-    </footer>
+          <div class="ref">
+            <p class="ref-name">Tnlgo. Darwin Ontaneda Medina</p>
+            <p class="ref-role">Técnico Especialista</p>
+            <p class="ref-org">COMM&amp;NET S.A.</p>
+            <a class="ref-tel" href="tel:+593968150737">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>
+              +593 96 815 0737
+            </a>
+          </div>
+        </div>
+      </section>
 
+      <section id="contacto" class="outro" aria-label="Contacto">
+        <div class="sec-head">
+          <span class="sec-num">07</span>
+          <h2 class="sec-title">Contacto</h2>
+        </div>
+
+        <h3 class="outro-title">¿Trabajamos juntos?</h3>
+        <p class="outro-text">
+          Disponible para prácticas, posiciones junior y proyectos freelance. Si quieres ver un demo de alguno de
+          mis bots o proyectos, escríbeme y te lo muestro.
+        </p>
+
+        <div class="outro-actions">
+          <a class="btn btn-primary" href="https://wa.me/593994866214?text=Hola%20Jenner%2C%20vi%20tu%20CV%20y%20me%20gustar%C3%ADa%20contactarte" target="_blank" rel="noopener">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+            Escribir por WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="mailto:jennerjoanvillalba@gmail.com?subject=Contacto%20desde%20tu%20CV">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+            Enviar correo
+          </a>
+          <a class="btn btn-ghost" href="tel:+593994866214">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/></svg>
+            +593 99 486 6214
+          </a>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>© <span id="year">2026</span> Jenner Joan Villalba Paladines</span>
+        <span class="colophon">Diseñado y construido en Machala, Ecuador</span>
+      </footer>
+
+    </main>
   </div>
 
   <script>
-    // Animación suave al scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+    (function () {
+      'use strict';
+
+      /* ---- Toggle de tema ---- */
+      var root = document.documentElement;
+      var toggle = document.querySelector('.theme-toggle');
+      var themeColor = document.querySelector('meta[name="theme-color"]');
+
+      function syncThemeColor() {
+        if (themeColor) {
+          themeColor.setAttribute('content', root.dataset.theme === 'dark' ? '#0e0f12' : '#faf9f7');
+        }
+      }
+      syncThemeColor();
+
+      toggle.addEventListener('click', function () {
+        var next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        localStorage.setItem('theme', next);
+        syncThemeColor();
       });
-    });
-    
-    // Título fijo y limpio
-    document.title = "Jenner Villalba | CV";
+
+      /* ---- Scroll-spy de la navegación ---- */
+      var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+      var byId = {};
+      links.forEach(function (a) { byId[a.hash.slice(1)] = a; });
+
+      if ('IntersectionObserver' in window && links.length) {
+        var spy = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting && byId[entry.target.id]) {
+              links.forEach(function (l) { l.classList.remove('active'); });
+              byId[entry.target.id].classList.add('active');
+            }
+          });
+        }, { rootMargin: '-30% 0px -60% 0px' });
+
+        document.querySelectorAll('main section[id]').forEach(function (s) { spy.observe(s); });
+      }
+
+      /* ---- Aparición sutil de secciones (respeta reduced-motion) ---- */
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!reduced && 'IntersectionObserver' in window) {
+        var reveal = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('in');
+              reveal.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+
+        document.querySelectorAll('main section').forEach(function (s) {
+          s.classList.add('js-reveal');
+          reveal.observe(s);
+        });
+      }
+
+      /* ---- Año dinámico ---- */
+      var y = document.getElementById('year');
+      if (y) { y.textContent = String(new Date().getFullYear()); }
+    })();
   </script>
 </body>
 </html>
